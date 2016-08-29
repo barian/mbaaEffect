@@ -79,7 +79,7 @@ var charaLayer = cc.Layer.extend({
     this.addChild(sprite2, 0);
     //火属性　敵ｻｺ中ボスキャラクター
     var sprite4 = cc.Sprite.create(res.chara_enemy_4);
-    sprite4.setPosition(size.width * 0.85, size.height * 0.40);
+    sprite4.setPosition(size.width * 0.5, size.height * 0.40);
     sprite4.setScale(1.2);
     this.addChild(sprite4, 0);
   }
@@ -150,7 +150,7 @@ var particleLayer = cc.Layer.extend({
     debugText.setString(sName);
 
     var tempParticle = new cc.ParticleSystem(eval(sName));
-    tempParticle.setPosition(x, y);
+    tempParticle.setPosition(400, y);
     if(this.skillLevel==2){
       tempParticle.gravityy = -300;
     }
