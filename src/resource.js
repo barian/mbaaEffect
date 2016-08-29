@@ -35,7 +35,8 @@ var res = {
   Burst_flame2_plist: "res/effect/flame_beam.plist",
   D_flame1_plist : "res/effect/D_flame.plist",
   Burst_flame6_plist:"res/effect/blood.plist",
-  Burst_flame3_plist:"res/effect/en.plist",
+  Burst_flame7_plist:"res/effect/en.plist",
+  Burst_flame3_plist:"res/effect/bust.plist",
 
 };
 
