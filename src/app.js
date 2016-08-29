@@ -23,8 +23,6 @@ var gameLayer = cc.Layer.extend({
     size = cc.winSize;
     //デバッグ用ラベルをcreate
     debugText = cc.LabelTTF.create("debug","Arial","32", cc.TEXT_ALIGNMENT_CENTER);
-    this.addChild(debugText);
-    debugText.setPosition(450,size.height - 20);
     return true;
   },
 
@@ -48,25 +46,11 @@ var charaLayer = cc.Layer.extend({
     this._super();
 
     var size = cc.director.getWinSize();
-
-    //水キャラクターを追加
-    var sprite11 = cc.Sprite.create(res.chara_princessselect_11);
-    sprite11.setPosition(size.width * 0.25, size.height * 0.4);
-    sprite11.setScale(0.8);
-    this.addChild(sprite11, 0);
-
     //火属性のキャラクター
     var sprite10 = cc.Sprite.create(res.chara_princessselect_10);
     sprite10.setPosition(size.width * 0.3, size.height * 0.3);
     sprite10.setScale(0.8);
     this.addChild(sprite10, 0);
-
-    //木属性キャラクター
-    var sprite12 = cc.Sprite.create(res.chara_princessselect_12);
-    sprite12.setPosition(size.width * 0.15, size.height * 0.25);
-    sprite12.setScale(0.8);
-    this.addChild(sprite12, 0);
-
     //火属性　敵ｻｺキャラクター
     var sprite1 = cc.Sprite.create(res.chara_enemy_1);
     sprite1.setPosition(size.width * 0.65, size.height * 0.45);
@@ -151,9 +135,7 @@ var particleLayer = cc.Layer.extend({
 
     var tempParticle = new cc.ParticleSystem(eval(sName));
     tempParticle.setPosition(400, y);
-    if(this.skillLevel==2){
-      tempParticle.gravityy = -300;
-    }
+
     this.addChild(tempParticle, 20);
     tempParticle.setAutoRemoveOnFinish(true);
 

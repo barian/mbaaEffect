@@ -30,10 +30,12 @@ var res = {
   HealTexture1_plist: "res/effect/Heal_texture1.plist",
   SlipTexture1_plist: "res/effect/Slip_texture1.plist",
   Burst_flame1_plist: "res/effect/Burst_flame.plist",
-  Burst_flame2_plist: "res/effect/Flame.plist",
+  Burst_flame5_plist: "res/effect/Flame.plist",
   Burst_flame4_plist: "res/effect/Beam.plist",
-  Burst_flame3_plist: "res/effect/flame_beam.plist",
+  Burst_flame2_plist: "res/effect/flame_beam.plist",
   D_flame1_plist : "res/effect/D_flame.plist",
+  Burst_flame6_plist:"res/effect/blood.plist",
+  Burst_flame3_plist:"res/effect/en.plist",
 
 };
 
